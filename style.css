@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #080350;
+}
+
+body {
+    background-color: #cdcdd4b9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;   
+}
+
+.left {
+    background-color: #eee9e9;
+    box-shadow: 0 0 10px #0b0655;
+    border-radius: 10px;
+}
+
+.foto{
+    position: relative;
+} 
+
+.foto img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.foto h1{
+    position: absolute;
+    bottom: 1rem;
+    color: #e5e4f0;
+    width: 100%;
+    text-align: center;
+}
+
+i{
+    color: black
+}
+
+.pessoais, .habilidades, .idiomas{
+    color: #0733f8;
+    padding: 1rem;
+    line-height: 2rem;
+}
+.pessoais{
+    font-size: 1.1rem;
+    
+}
+progress{
+    width: 100%;
+    height: 1.8rem;
+}
+
+.sobre, .experiencias, .educacao {
+    padding: 1.5rem;
+    background-color: #eee9e9;
+    box-shadow: 7px 7px 10px #030303b9;
+    border-radius: 10px;
+}
+
+.experiencias, .educacao{
+    margin-top: 1rem;
+}
+
+.trabalho, .curso{
+    margin: 1.5rem 0;
+}
+
+.nome-trabalho, .nome-curso{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.trabalho p, .decacao p{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.data{
+    color:#fffffff8;
+    padding: 0.1rem 1rem;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #0c0c0c;
+    color: #e5e4f0;
+    padding: 1.5rem  ;
+}
+
+footer p{
+    color:#e5e4f0;
+    
+}
+
+footer i{
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 880px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

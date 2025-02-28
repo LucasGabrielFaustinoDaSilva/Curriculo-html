@@ -1,123 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --base-color: #081b29;
+    --title-color: #00abf0;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #080350;
+    color: #081b29;
 }
 
 body {
-    background-color: #cdcdd4b9;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-size: 18px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-main{
+main {
     margin: 1rem;
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-gap: 1rem;   
+    grid-gap: 1rem;
 }
 
 .left {
-    background-color: #eee9e9;
-    box-shadow: 0 0 10px #0b0655;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px var(--base-color);
     border-radius: 10px;
 }
 
-.foto{
+.foto {
     position: relative;
-} 
+}
 
-.foto img{
+.foto img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.foto h1{
+.foto h1 {
     position: absolute;
-    bottom: 1rem;
-    color: #e5e4f0;
+    bottom: 1.2rem;
+    color: var(--base-color);
     width: 100%;
     text-align: center;
+    font-size: 22px;
 }
 
-i{
-    color: black
+i {
+    color: var(--base-color);
 }
 
-.pessoais, .habilidades, .idiomas{
-    color: #0733f8;
+.pessoais, .habilidades, .idiomas {
+    color: var(--base-color);
     padding: 1rem;
     line-height: 2rem;
 }
-.pessoais{
+
+.pessoais {
     font-size: 1.1rem;
-    
 }
-progress{
+
+.pessoais ul li {
+    display: flex;
+    align-items: center;
+}
+
+.pessoais ul li i {
+    margin-right: 5px;
+}
+
+progress {
     width: 100%;
     height: 1.8rem;
 }
 
 .sobre, .experiencias, .educacao {
     padding: 1.5rem;
-    background-color: #eee9e9;
-    box-shadow: 7px 7px 10px #030303b9;
+    background-color: #f0f0f0;
+    box-shadow: 7px 7px 10px var(--base-color);
     border-radius: 10px;
 }
 
-.experiencias, .educacao{
+.sobre p {
     margin-top: 1rem;
 }
 
-.trabalho, .curso{
+.experiencias, .educacao {
+    margin-top: 1rem;
+}
+
+.trabalho, .curso {
     margin: 1.5rem 0;
 }
 
-.nome-trabalho, .nome-curso{
+.nome-trabalho, .nome-curso {
     font-size: 1.3rem;
     font-weight: bold;
 }
-.trabalho p, .decacao p{
+
+.trabalho p, .educacao p {
     margin-top: 0.5rem;
     line-height: 1.5rem;
     text-align: justify;
 }
-.data{
-    color:#fffffff8;
+
+.data {
+    color: var(--base-color);
+}
+
+.atual {
+    background-color: var(--base-color);
+    color: #fff;
     padding: 0.1rem 1rem;
     border-radius: 5px;
 }
 
-footer{
-    background-color: #0c0c0c;
-    color: #e5e4f0;
-    padding: 1.5rem  ;
+footer {
+    background-color: var(--base-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
-footer p{
-    color:#e5e4f0;
-    
+footer p {
+    color: #fff;
 }
 
-footer i{
+footer i {
     margin-top: 0.5rem;
     color: white;
     font-size: 32px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-@media (max-width: 880px){
-    main{
+h2, h2 i,
+h3, h3 i {
+    color: var(--title-color);
+}
+
+
+
+@media (max-width: 880px) {
+    main {
         display: grid;
         grid-template-columns: 1fr;
     }
